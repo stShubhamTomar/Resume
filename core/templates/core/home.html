@@ -1,0 +1,32 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static "core/images/tomarr.jpeg" %}" alt="tomar" 
+        class="img-thumbnail" width="250px" height="150px">
+    </div >
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-white-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent:100px;">I am <b class="text-warning">Shubham Tomar</b> I have completed my BCA(graduation) from S.D Colleg Of Management.
+                I completed my intermediate from Lala Jagdish Prasad Saraswati Vidya Mandir Inter College. I have a deep interest in Development.</p>
+                
+                    <p>I am interested in <b class="text-warning">Python Developer</b> role. A decicative, hardworking fresher with fair knowledge in Django, RestApi, MySQL and other projramming language with good communication skills.</p>
+
+                    <p>I'm hard working and always ready to take challenge. Flexible to work in any environment as required.</p>
+                    
+                    <p>Backed Developer Using Python and Django from DUCAT it Training
+                    School</p>
+
+                    <p>To work with an organization where I can learn new skills and increase my
+                        abilities and also seeking challenging opportunities where I can fully use my
+                        skills for the success of the organization.</p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+</div>
+{% endblock content %}
